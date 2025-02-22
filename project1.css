@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+span{
+    background: url("5172567_heart_like_love_icon.png");
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: animate 6s linear;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%,-5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
